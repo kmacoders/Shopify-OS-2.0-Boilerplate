@@ -1,0 +1,76 @@
+{{ 'section-welcome.css' | asset_url | stylesheet_tag }}
+
+<div class="welcome o-container -medium u-align-center">
+  <div class="welcome_wrapper u-mv-large" style="max-width: 45rem;">
+    <h1 class="p-heading -h1 -bold u-mb-small">{{ section.settings.heading }}</h1>
+    <h2 class="p-heading -h2 u-mb-small">{{ section.settings.subheading }}</h2>
+    <a class="p-button -primary u-mv-small"
+      href="#"
+      target="_blank">{{ section.settings.link_label }}
+      {%- render 'component-icon'
+        icon: 'arrow',
+        icon_size: 20
+      -%}</a>
+  </div>
+  <h1>Ahii</h1>
+
+  <div class="welcome_feature-wrapper u-mb-medium">
+    {% for block in section.blocks %}
+      {%- if block.settings.heading != blank and block.settings.description != blank -%}
+      <div class="welcome_feature u-mb-medium">
+        <h2 class="p-body -h1 -bold u-mb-small">{{ block.settings.heading }}</h2>
+        <h3 class="p-body -h2">{{ block.settings.description }}</h3>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "t:sections.welcome.name",
+  "tag": "section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "t:sections.welcome.settings.heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "t:sections.welcome.settings.subheading.label"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "t:sections.welcome.settings.link_label.label"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "t:sections.welcome.blocks.card.name",
+      "type": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:sections.welcome.blocks.card.settings.heading.label"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "t:sections.welcome.blocks.card.settings.description.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.welcome.presets.name"
+    }
+  ]
+}
+{% endschema %}

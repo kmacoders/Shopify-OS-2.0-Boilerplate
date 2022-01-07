@@ -1,0 +1,26 @@
+/// - BASE 
+// Include all Variable, Mixins, Function, Grid...
+@import './utils/utils-dir';
+@import './vendors/grid';
+
+/// - COMPONENTS
+// Build and include your project’s UI components.
+// Uncomment and add to this as necessary.
+///
+/// Button..............Specific styles for btn component and its variations.
+/// Typeface............Specific styles for heading component and its size variations.
+/// Field...............Specific styles for field and input component.
+///
+@import './components/button';
+@import './components/typeface';
+@import './components/field';
+// @import './components/price';
+
+/// - SECTIONS
+// These are base section.
+///
+/// Header..............Shopify static section.
+/// Footer..............Shopify static section.
+///
+@import './sections/header';
+@import './sections/footer';

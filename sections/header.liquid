@@ -1,0 +1,19 @@
+{{ 'component-dark-mode-button.css' | asset_url | stylesheet_tag }}
+<script src="{{- 'component-dark-mode-button.js' | asset_url -}}" defer></script>
+
+<header class="header o-container -medium">
+  <div class="header_logo p-heading -bold">The Header Sample by Rio</div>
+  <dark-mode-button>
+    <button class="p-button" type="button" aria-label="Toggle dark mode">
+      {%- render 'component-icon' icon: 'moon', icon_size: 15 -%}
+      {%- render 'component-icon' icon: 'sun', icon_size: 15 -%}
+    </button>
+  </dark-mode-button>
+</header>
+
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "settings": []
+}
+{% endschema %}

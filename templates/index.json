@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "welcome",
+      "settings": {
+        "heading": "Modern Shopify<br>development.",
+        "subheading": "A Shopify theme environment from scratch ⚙️, with Online Store 2.0 features. Built with performance ⚡️ and best practices in mind..",
+        "link_label": "Get started"
+      }
+    },
+    "slideshow": {
+      "type": "section-slideshow",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow"
+  ]
+}

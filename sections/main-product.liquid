@@ -1,0 +1,14 @@
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+
+<div class="product o-container -medium" >
+  {%- render 'component-product-card' -%}
+</div>
+
+
+{% schema %}
+{
+  "name": "t:sections.product.name",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}
