@@ -1,4 +1,4 @@
-# Otowa Store
+# Shopify OS 2.0 Boilerplate
 
 ## How to add Vue 3 to this boilerplace ?
 1. Install package ( Please pay attention to the version number )
