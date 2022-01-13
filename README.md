@@ -1,5 +1,11 @@
 # Shopify OS 2.0 Boilerplate
 
+
+## Note
+We have 2 versions of our Shopify theme building system.
+- Version 1: Build Theme from scratch ( Shopify OS 2.0 - this git )
+- Version 2: Fix the existing Theme ( [here](https://github.com/kmacoders/PusherBase-ShopifyThemeFromExistTheme) )
+
 ## How to add Vue 3 to this boilerplace ?
 1. Install package ( Please pay attention to the version number )
 ```
